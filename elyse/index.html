@@ -2,23 +2,304 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Elyse Moran's Bridesmaids</title>
-<meta name="description" content="06.26.27 · Boston. A few details, please: pajama sizes, monogram, and the little things.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elyse's Bridesmaids</title>
+<meta name="description" content="06.26.27 · Boston. A few details, please.">
+<meta name="theme-color" content="#EFEAD9">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://morganldove-sketch.github.io/invites/elyse/">
-<meta property="og:title" content="Elyse Moran's Bridesmaids">
-<meta property="og:description" content="06.26.27 · Boston. A few details, please.">
-<meta property="og:image" content="https://morganldove-sketch.github.io/invites/elyse/elyse-preview.png">
+<meta property="og:title" content="Elyse's Bridesmaids">
+<meta property="og:image" content="https://morganldove-sketch.github.io/invites/elyse/elyse-preview-2.png">
 <meta property="og:image:width" content="1080">
 <meta property="og:image:height" content="1350">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://morganldove-sketch.github.io/invites/elyse/elyse-preview.png">
-<style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#EFEAD9;font:500 19px Georgia,serif;color:#1E1E1B;text-align:center;padding:16px}.btn{display:inline-block;background:#1E1E1B;color:#FBF8EE;text-decoration:none;letter-spacing:.2em;text-transform:uppercase;font-size:15px;padding:15px 28px}</style>
+<meta name="twitter:image" content="https://morganldove-sketch.github.io/invites/elyse/elyse-preview-2.png">
+<link rel="apple-touch-icon" href="elyse-preview-2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Cormorant+SC:wght@500;600&family=EB+Garamond:wght@400;500;600&family=Parisienne&display=swap">
+<style>
+/* Stationery card on cream: double-ruled border, black-and-cream ribbon, olive + dusty blue accents. Deliberately single (light) theme like printed paper. */
+:root{
+  --paper:#FBF8EE; --ground:#EFEAD9; --ink:#1E1E1B; --muted:#5D6058; --rule:#1E1E1B;
+  --blue:#8DA5AC; --blue-soft:#DCE5E6; --olive:#5B7314; --olive-ink:#FBF8EE; --line:#CFC9B4; --err:#8A2E1F;
+  --f-script:"Parisienne","Snell Roundhand",cursive;
+  --f-caps:"Cormorant SC","Cormorant Garamond",Georgia,serif;
+  --f-display:"Cormorant Garamond",Georgia,serif;
+  --f-body:"EB Garamond",Georgia,"Times New Roman",serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+button{touch-action:manipulation}
+html,body{margin:0}
+body{background:var(--ground);color:var(--ink);font:18px/1.5 var(--f-body);-webkit-text-size-adjust:100%;
+  padding:max(24px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) 48px max(14px,env(safe-area-inset-left))}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--olive);outline-offset:2px}
+
+.sheet{max-width:640px;margin:0 auto;background:var(--paper);box-shadow:0 1px 0 var(--line),0 18px 40px -24px rgba(30,30,27,.35);position:relative}
+.ribbon{height:14px;background:repeating-linear-gradient(90deg,var(--ink) 0 7px,var(--paper) 7px 14px);border-bottom:1.5px solid var(--ink)}
+.hyd{position:absolute;width:clamp(120px,30vw,190px);height:auto;pointer-events:none;z-index:2}
+.hyd.tl{top:2px;left:-10px}
+.hyd.br{bottom:-12px;right:-10px;transform:rotate(180deg)}
+.sheet{overflow:visible;display:flow-root}
+.frame{margin:18px;border:1.5px solid var(--rule);padding:4px}
+.frame-in{border:.75px solid var(--rule);padding:34px 26px 30px}
+
+header{text-align:center}
+.caps{font-family:var(--f-caps);letter-spacing:.14em;font-size:15px;color:var(--ink)}
+.bow{display:block;margin:0 auto 10px}
+h1{font-family:var(--f-script);font-weight:400;font-size:clamp(44px,12vw,68px);line-height:1.15;margin:8px 0 0;color:var(--ink)}
+.sub{font-family:var(--f-display);font-style:italic;font-size:21px;color:var(--muted);margin:2px 0 0}
+.date{margin-top:16px;font-family:var(--f-display);font-weight:600;font-size:22px;letter-spacing:.32em;color:var(--olive)}
+.place{margin-top:4px}
+.heart{display:block}
+.intro{max-width:34ch;margin:22px auto 0;text-align:center;font-size:18px}
+.divider{display:flex;align-items:center;gap:12px;justify-content:center;margin:26px 0 6px;color:var(--olive)}
+.divider::before,.divider::after{content:"";height:.75px;background:var(--rule);flex:1;max-width:120px}
+
+form{display:flex;flex-direction:column;gap:26px;margin-top:20px}
+fieldset{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;min-width:0}
+legend{font-family:var(--f-caps);font-size:20px;letter-spacing:.12em;text-align:center;width:100%;padding:0 0 4px;color:var(--olive)}
+label,.lab{display:block;font-family:var(--f-caps);font-size:15px;letter-spacing:.1em;margin-bottom:4px}
+.opt{font-family:var(--f-display);font-style:italic;letter-spacing:0;text-transform:none;color:var(--muted);font-size:15px}
+input[type=text],input[type=email],input[type=tel],select,textarea{
+  width:100%;min-width:0;background:transparent;border:0;border-bottom:1px solid var(--ink);border-radius:0;
+  padding:6px 2px 7px;font-size:18px;-webkit-appearance:none;appearance:none}
+textarea{border:1px solid var(--line);padding:9px 10px;resize:vertical;min-height:72px;background:#fff8}
+select{background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);
+  background-position:calc(100% - 14px) 55%,calc(100% - 9px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:26px}
+input[type=text],input[type=email],input[type=tel],textarea{color:var(--olive)}
+input::placeholder,textarea::placeholder{color:#9A9A8E;font-style:italic}
+.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px}
+@media (max-width:440px){.row{grid-template-columns:1fr}}
+
+/* Monogram */
+.mono-wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
+.mono-wrap>div:last-child{width:100%;max-width:360px}
+.mono{width:132px;height:132px;flex:none;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;
+  box-shadow:inset 0 0 0 5px var(--blue),inset 0 0 0 6px var(--paper);color:var(--paper);font-family:var(--f-display);font-weight:600;gap:2px}
+.mono .s{font-size:38px;line-height:1;width:30px;text-align:center}
+.mono .b{font-size:64px;line-height:1;width:46px;text-align:center}
+.inits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.mono-wrap{margin-top:12px}
+.inits label{text-align:center}
+.inits input{color:var(--olive);text-align:center;font-family:var(--f-display);font-size:26px;font-weight:600;text-transform:uppercase}
+.hint{font-family:var(--f-display);font-style:italic;color:var(--muted);font-size:15.5px;margin:6px 0 0}
+
+/* Size chips */
+.chips{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.chips button{padding:9px 0;background:transparent;border:1px solid var(--ink);font-family:var(--f-caps);letter-spacing:.08em;font-size:16px;cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--olive);border-color:var(--olive);color:var(--olive-ink)}
+
+.submit{margin-top:4px;background:var(--ink);color:var(--paper);border:0;padding:15px 22px;font-family:var(--f-caps);letter-spacing:.2em;font-size:18px;cursor:pointer}
+.submit:disabled{opacity:.6}
+.status{text-align:center;font-family:var(--f-display);font-style:italic;font-size:18px;min-height:1.4em;color:var(--olive)}
+.status.err{color:var(--err)}
+
+.done{margin-top:6px;text-align:center}
+.names{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:10px}
+.names span{background:var(--blue-soft);padding:4px 12px;font-family:var(--f-display);font-size:18px;font-weight:600}
+.cheer{display:flex;flex-direction:column;align-items:center;gap:8px}
+.names em{font-family:var(--f-display);color:var(--muted)}
+.foot{text-align:center;margin-top:26px;font-family:var(--f-display);font-style:italic;color:var(--muted);font-size:15.5px}
+.status{min-height:0}
+.done{margin-top:-8px}
+.frame-in{padding-bottom:64px}
+@media (max-width:440px){body{padding-left:max(10px,env(safe-area-inset-left));padding-right:max(10px,env(safe-area-inset-right))}.frame{margin:14px}.frame-in{padding-left:20px;padding-right:20px}header .caps{font-size:14px;letter-spacing:.1em}}
+@media (max-width:360px){.frame{margin:12px}.frame-in{padding-left:16px;padding-right:16px}.submit{letter-spacing:.12em}}
+.linkbtn{background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;color:inherit;font:inherit}
+</style>
 </head>
 <body>
-<main>
-<a href="https://script.google.com/macros/s/AKfycbz7DcyxIL_qe92E5gTW2LaI4rcZ5VLmVumMmmxRi3lkFe6UzKlRcCip4tTMK0y4suCZ/exec"><img src="elyse-preview.png" alt="The bridesmaids of the future Elyse Moran, 06.26.27, Boston" style="width:min(88vw,440px);height:auto;display:block;margin:0 auto;box-shadow:0 18px 40px -24px rgba(30,30,27,.4)"></a>
+<main class="sheet">
+  <div class="ribbon" aria-hidden="true"></div>
+  <svg class="hyd tl" id="hyd-tl" viewBox="0 0 200 190" aria-hidden="true"></svg>
+  <svg class="hyd br" id="hyd-br" viewBox="0 0 200 190" aria-hidden="true"></svg>
+  <div class="frame"><div class="frame-in">
+    <header>
+      <svg class="bow" width="76" height="38" viewBox="0 0 76 38" aria-hidden="true">
+        <path d="M38 19 C28 6 10 2 6 10 C2 18 10 30 38 19 Z" fill="none" stroke="#5B7314" stroke-width="1.6"/>
+        <path d="M38 19 C48 6 66 2 70 10 C74 18 66 30 38 19 Z" fill="none" stroke="#5B7314" stroke-width="1.6"/>
+        <path d="M36 21 L28 36 M40 21 L48 36" stroke="#5B7314" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="34" y="15" width="8" height="8" rx="2" fill="#5B7314"/>
+      </svg>
+      <div class="caps">The bridesmaids of the future</div>
+      <h1>Elyse Moran</h1>
+      <p class="sub">a few details, please</p>
+      <div class="date">06.26.27</div>
+      <div class="caps place">Boston, Massachusetts</div>
+      <p class="intro">For the getting-ready pajamas, monogrammed gifts,<br>and everything in between</p>
+      <div class="divider" aria-hidden="true"><svg class="heart" viewBox="0 0 24 22" width="16" height="15" aria-hidden="true"><path d="M12 21C5 15.5 1 11.8 1 7.2 1 3.8 3.7 1 7 1c2 0 3.8 1 5 2.7C13.2 2 15 1 17 1c3.3 0 6 2.8 6 6.2 0 4.6-4 8.3-11 13.8z" fill="#5B7314"/></svg></div>
+    </header>
+
+    <form id="f" novalidate>
+      <fieldset>
+        <legend>You</legend>
+        <div><label for="name">Full name</label><input type="text" id="name" maxlength="60" autocomplete="name" placeholder="Caroline Whitney Adams"></div>
+        <div class="row">
+          <div><label for="phone">Phone</label><input type="tel" id="phone" maxlength="30" autocomplete="tel" placeholder="(617) 555-0142"></div>
+          <div><label for="email">Email</label><input type="email" id="email" maxlength="80" autocomplete="email" placeholder="caroline@email.com"></div>
+        </div>
+        <div><label for="address">Mailing address <span class="opt">for little surprises</span></label><textarea id="address" rows="2" maxlength="240" autocomplete="street-address" placeholder="Street, city, state, ZIP"></textarea></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferred monogram</legend>
+        <div class="mono-wrap">
+          <div class="mono" aria-label="Monogram preview" role="img"><span class="s" id="m1">C</span><span class="b" id="m2">A</span><span class="s" id="m3">W</span></div>
+          <div>
+            <div class="inits">
+              <div><label for="first">First</label><input type="text" id="first" maxlength="1" autocomplete="off" placeholder="C"></div>
+              <div><label for="middle">Middle</label><input type="text" id="middle" maxlength="1" autocomplete="off" placeholder="W"></div>
+              <div><label for="last">Last</label><input type="text" id="last" maxlength="1" autocomplete="off" placeholder="A"></div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sizes</legend>
+        <div><span class="lab">Pajama top</span><div class="chips" data-field="pjTop"></div></div>
+        <div><span class="lab">Pajama bottom</span><div class="chips" data-field="pjBottom"></div></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>The little things</legend>
+        <div><label for="drink">Getting-ready drink order</label><input type="text" id="drink" maxlength="120" placeholder="Oat latte, then a mimosa"></div>
+        <div><label for="dietary">Allergies or dietary needs</label><input type="text" id="dietary" maxlength="200" placeholder="None"></div>
+        <div><label for="notes">Anything else Elyse should know</label><textarea id="notes" rows="3" maxlength="500"></textarea></div>
+      </fieldset>
+
+      <button class="submit" type="submit" id="save">Send to Elyse</button>
+      <div class="status" id="status" role="status"></div>
+    </form>
+
+    <section class="done">
+      <div class="names" id="names"><div class="cheer"><em>Can't wait to celebrate with you</em><svg class="heart" viewBox="0 0 24 22" width="18" height="17" aria-hidden="true"><path d="M12 21C5 15.5 1 11.8 1 7.2 1 3.8 3.7 1 7 1c2 0 3.8 1 5 2.7C13.2 2 15 1 17 1c3.3 0 6 2.8 6 6.2 0 4.6-4 8.3-11 13.8z" fill="#5B7314"/></svg></div></div>
+    </section>
+
+    <p class="foot" id="foot"><span id="reset" hidden><button type="button" class="linkbtn" id="new">Filling this out for someone else?</button></span></p>
+  </div></div>
 </main>
+
+<script>
+const SIZES = ["XS","S","M","L","XL","XXL"];
+const $ = id => document.getElementById(id);
+const store = { get(k){ try{return localStorage.getItem(k);}catch(e){return null;} }, set(k,v){ try{localStorage.setItem(k,v);}catch(e){} } };
+const newId = () => "b" + Date.now().toString(36) + Math.random().toString(36).slice(2,10);
+let myId = store.get("elyse-bm-id") || newId();
+const chips = {pjTop:"", pjBottom:""};
+const CHEER = document.getElementById("names").innerHTML;
+const SAMPLES = [
+  {name:"Jacqueline Lee Bouvier", f:"J", m:"L", l:"B", email:"jackie@email.com", drink:"Oat latte, then a mimosa"},
+  {name:"Blair Cornelia Waldorf", f:"B", m:"C", l:"W", email:"blair@email.com", drink:"Oat latte, then a mimosa"},
+  {name:"Ruth Bader Ginsburg", f:"R", m:"B", l:"G", email:"ruth@email.com", drink:"Oat latte, then a mimosa"}
+];
+(function(){ const x=SAMPLES.find(s=>s.name==="Ruth Bader Ginsburg");
+  $("name").placeholder=x.name; $("first").placeholder=x.f; $("middle").placeholder=x.m; $("last").placeholder=x.l;
+  $("email").placeholder=x.email; $("drink").placeholder=x.drink; })();
+
+/* Server: answers are saved to Elyse's Google Sheet through the Apps Script endpoint */
+const API = "https://script.google.com/macros/s/AKfycbz7DcyxIL_qe92E5gTW2LaI4rcZ5VLmVumMmmxRi3lkFe6UzKlRcCip4tTMK0y4suCZ/exec";
+async function call(fn, arg){
+  if(fn==="saveEntry"){
+    const r = await fetch(API, {method:"POST", body:JSON.stringify(arg)});
+    const j = await r.json(); if(!j.ok) throw new Error(j.error||"save failed"); return j.data;
+  }
+  const r = await fetch(API+"?action=status&id="+encodeURIComponent(arg));
+  return r.json();
+}
+
+/* Build controls */
+document.querySelectorAll(".chips").forEach(box=>{
+  SIZES.forEach(s=>{ const b=document.createElement("button"); b.type="button"; b.textContent=s; b.setAttribute("aria-pressed","false");
+    b.onclick=()=>{ chips[box.dataset.field]=s; paintChips(); }; box.append(b); });
+});
+function paintChips(){ document.querySelectorAll(".chips").forEach(box=>box.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed", b.textContent===chips[box.dataset.field]))); }
+
+/* Monogram preview */
+function paintMono(){
+  const g = id => ($(id).value.trim().slice(0,1) || $(id).placeholder).toUpperCase();
+  $("m1").textContent=g("first"); $("m2").textContent=g("last"); $("m3").textContent=g("middle");
+}
+["first","middle","last"].forEach(id=>$(id).addEventListener("input",e=>{ e.target.value=e.target.value.replace(/[^a-z]/gi,"").slice(0,1).toUpperCase(); paintMono(); }));
+$("name").addEventListener("change",()=>{
+  const parts=$("name").value.trim().split(/\s+/).filter(Boolean);
+  if(parts.length>=2 && !$("first").value && !$("last").value){
+    $("first").value=parts[0][0].toUpperCase(); $("last").value=parts[parts.length-1][0].toUpperCase();
+    if(parts.length>=3 && !$("middle").value) $("middle").value=parts[1][0].toUpperCase();
+    paintMono();
+  }
+});
+
+const TEXT = ["name","phone","email","address","first","middle","last","drink","dietary","notes"];
+function fill(r){
+  TEXT.forEach(k=>{ $(k).value = r[k]==null ? "" : String(r[k]); });
+  chips.pjTop = String(r.pjTop||""); chips.pjBottom = String(r.pjBottom||"");
+  paintChips(); paintMono();
+}
+function paintNames(names){
+  const box=$("names"); box.replaceChildren();
+  box.innerHTML=CHEER; return;
+  names.forEach(n=>{ const s=document.createElement("span"); s.textContent=n; box.append(s); });
+}
+function setSaved(isSaved){ $("save").textContent = isSaved ? "Update my answers" : "Send to Elyse"; $("reset").hidden = !isSaved; }
+
+$("f").addEventListener("submit", async e=>{
+  e.preventDefault(); const st=$("status"); st.className="status";
+  const err = (msg, focus) => { st.className="status err"; st.textContent=msg; if(focus) $(focus).focus(); };
+  if(!$("name").value.trim()) return err("Please add your name.", "name");
+  if(!$("first").value || !$("last").value) return err("Please add at least your first and last initials.", "first");
+  if(!chips.pjTop || !chips.pjBottom) return err("Please pick your pajama sizes.");
+  $("save").disabled=true; st.textContent="Sending…";
+  const payload={id:myId, pjTop:chips.pjTop, pjBottom:chips.pjBottom}; TEXT.forEach(k=>payload[k]=$(k).value.trim());
+  try{
+    const res = await call("saveEntry", payload);
+    store.set("elyse-bm-id", myId); paintNames(res.names); setSaved(true);
+    st.textContent="Thank you! Elyse has your details.";
+  }catch(x){ err("That didn't send. Check your connection and try again."); }
+  finally{ $("save").disabled=false; }
+});
+$("new").onclick=()=>{ myId=newId(); store.set("elyse-bm-id",myId); fill({}); setSaved(false); $("status").textContent=""; window.scrollTo({top:0,behavior:"smooth"}); };
+
+/* Hydrangea corners, drawn from a seeded pattern so they look the same for everyone */
+(function(){
+  const NS="http://www.w3.org/2000/svg", pal=["#8DA5AC","#9DB4BA","#B3C6CA","#7C959D","#C7D6D8","#A7BDC2"];
+  function rng(seed){ return ()=>{ seed=(seed*16807)%2147483647; return (seed-1)/2147483646; }; }
+  function el(tag,attrs,parent){ const e=document.createElementNS(NS,tag); for(const k in attrs) e.setAttribute(k,attrs[k]); parent.append(e); return e; }
+  function leaf(g,x,y,L,W,a){
+    const t=el("g",{transform:`translate(${x} ${y}) rotate(${a})`},g);
+    el("path",{d:`M0 0C${W} ${-L*.25} ${W*.8} ${-L*.75} 0 ${-L}C${-W*.8} ${-L*.75} ${-W} ${-L*.25} 0 0Z`,fill:"#5B7314",opacity:".88"},t);
+    el("path",{d:`M0 -2L0 ${-L*.9}`,stroke:"#FBF8EE","stroke-width":"1",opacity:".55"},t);
+  }
+  function cluster(g,cx,cy,R,n,r){
+    const pts=[]; for(let i=0;i<n;i++){ const d=R*Math.sqrt(r()), t=r()*Math.PI*2; pts.push([cx+d*Math.cos(t), cy+d*Math.sin(t)*.92, d]); }
+    pts.sort((a,b)=>b[2]-a[2]);
+    pts.forEach(([x,y,d])=>{
+      const s=R*.15*(1.1-.3*d/R), f=el("g",{transform:`translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${(r()*90).toFixed(0)})`,fill:pal[Math.floor(r()*pal.length)]},g);
+      for(let k=0;k<4;k++) el("ellipse",{cx:0,cy:(-s*.55).toFixed(1),rx:(s*.42).toFixed(1),ry:(s*.6).toFixed(1),transform:`rotate(${k*90})`},f);
+      el("circle",{cx:0,cy:0,r:(s*.16).toFixed(1),fill:"#EEF3F2"},f);
+    });
+  }
+  function spray(svg,seed,single){
+    const r=rng(seed), g=el("g",{},svg);
+    const leaves=[[80,72,78,22,150],[80,72,74,20,95],[80,72,70,20,200],[140,110,58,16,140],[140,110,52,15,60]];
+    (single ? leaves.slice(0,3) : leaves).forEach(a=>leaf(g,...a));
+    cluster(g,70,64,50,90,r); if(!single) cluster(g,142,112,30,40,r);
+  }
+  spray($("hyd-tl"),7,true); spray($("hyd-br"),19);
+})();
+
+/* Load */
+(async()=>{
+  paintMono();
+  try{
+    const res = await call("getStatus", myId);
+    paintNames(res.names);
+    if(res.mine){ fill(res.mine); setSaved(true); }
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
